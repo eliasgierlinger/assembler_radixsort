@@ -45,7 +45,7 @@ PrefixSumLoopHead&forvalue&:
 ; then merge all 64 Xs into a register
 ; on that register we can use popcount to get all amount of 1s
  
-vmovdqu ymm0, ymmword ptr [rcx] ; PERHAPS MOVE THESE OUTSIDE THE LOOP
+vmovdqu ymm0, ymmword ptr [rcx]
 vmovdqu ymm1, ymmword ptr [rcx+32]
 vmovdqu ymm2, ymmword ptr [rcx+64]
 vmovdqu ymm3, ymmword ptr [rcx+96]
